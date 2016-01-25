@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   abort("No version detected") if $1.nil?
   s.version = $1
 
-  s.source = { :git => "https://github.com/mxcl/#{s.name}.git", :tag => s.version }
+  s.source = { :git => "https://github.com/supersabbath/PromiseKit.git", :tag => s.version }
   s.license = { :type => 'MIT', :text => '@see README' }
   s.summary = 'A delightful Promises implementation for iOS and OS X.'
   s.homepage = 'http://promisekit.org'
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
     ss.osx.source_files = 'Categories/Foundation/*'
     ss.watchos.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*', 'Categories/Foundation/NSURL*']
     ss.dependency 'PromiseKit/CorePromise'
-    ss.dependency 'OMGHTTPURLRQ', :git =>'https://github.com/supersabbath/OMGHTTPURLRQ.git'
+    ss.dependency 'OMGHTTPURLRQ', :git => 'https://github.com/supersabbath/OMGHTTPURLRQ.git'
     ss.frameworks = 'Foundation'
   end
   
