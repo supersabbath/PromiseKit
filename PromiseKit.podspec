@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
     ss.osx.source_files = 'Categories/Foundation/*'
     ss.watchos.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*', 'Categories/Foundation/NSURL*']
     ss.dependency 'PromiseKit/CorePromise'
-    ss.dependency 'OMGHTTPURLRQ', :git => 'https://github.com/supersabbath/OMGHTTPURLRQ.git'
+    ss.dependency 'OMGHTTPURLRQ', '3.1.1'
     ss.frameworks = 'Foundation'
   end
   
